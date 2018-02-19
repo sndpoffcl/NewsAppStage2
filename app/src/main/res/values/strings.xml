@@ -79,4 +79,5 @@
     <string name="settings_section_Film_news_label">Film</string>
     <string name="settings_section_Film_value" translatable="false">film</string>
 
+    <string name="noauthor">No Author ..</string>
 </resources>

@@ -26,8 +26,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements LoaderCallbacks<List<News>> {
     private NewsAdpater mAdapter;
     private TextView mNoContentTextView;
-    private static String REQUEST_URL =
-            "http://content.guardianapis.com/search?";
+    private static String REQUEST_URL = "http://content.guardianapis.com/search?";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,6 +118,4 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 }

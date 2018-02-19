@@ -15,7 +15,6 @@ import java.util.ArrayList;
 
 public class NewsAdpater extends ArrayAdapter<News> {
 
-
     public NewsAdpater(Context context, ArrayList<News> news) {
         super(context, 0, news);
     }
@@ -33,7 +32,6 @@ public class NewsAdpater extends ArrayAdapter<News> {
         String title = currentNews.getmTitle();
         newsTitleTextView.setText(title);
 
-
         TextView newsCategorytextView = (TextView) listItemView.findViewById(R.id.category_text_view);
         String category = currentNews.getmCategory();
         newsCategorytextView.setText(category);
@@ -44,6 +42,12 @@ public class NewsAdpater extends ArrayAdapter<News> {
 
         TextView newsAuthortextView = (TextView) listItemView.findViewById(R.id.author_text_view);
         String author = currentNews.getmAuthor();
+
+        //Check Author if empty show this message
+        if(author.equals("")){
+            author = getContext().getString(R.string.noauthor);
+        }
+
         newsAuthortextView.setText(author);
 
         return listItemView;

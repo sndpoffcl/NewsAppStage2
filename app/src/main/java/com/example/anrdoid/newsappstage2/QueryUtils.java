@@ -52,7 +52,6 @@ public class QueryUtils {
         return url;
     }
 
-
     private static String makeHttpRequest(URL url) throws IOException {
         String jsonResponse = "";
 
@@ -110,9 +109,7 @@ public class QueryUtils {
 
         List<News> newsList = new ArrayList<>();
 
-
         try {
-
             JSONObject baseJsonResponse = new JSONObject(newsJSON);
             JSONObject response = baseJsonResponse.getJSONObject("response");
             JSONArray resultsArray = response.getJSONArray("results");
@@ -130,19 +127,18 @@ public class QueryUtils {
                 if (tagsauthor.length() != 0) {
                     JSONObject currenttagsauthor = tagsauthor.getJSONObject(0);
                     author = currenttagsauthor.getString("webTitle");
-                } else {
+                } /* move Check to NewsAdapater ..
+                else {
                     author = "No Author ..";
-                }
+                }*/
 
                 News news = new News(Title, category, date, url, author);
                 newsList.add(news);
             }
 
         } catch (JSONException e) {
-
             e.printStackTrace();
         }
-
         return newsList;
     }
 }
