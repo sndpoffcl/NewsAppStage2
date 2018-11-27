@@ -1,7 +1,7 @@
 package com.example.anrdoid.newsappstage2;
 
 /**
- * Created by Labtop on 18/02/18.
+ * Created by SandeepSinha on 18/11/18.
  */
 
 public class News {

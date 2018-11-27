@@ -10,7 +10,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by Labtop on 18/02/18.
+ * Created by SandeepSinha on 18/11/18.
  */
 
 public class SettingsActivity extends AppCompatActivity {

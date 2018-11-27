@@ -6,7 +6,7 @@ import android.content.Context;
 import java.util.List;
 
 /**
- * Created by Labtop on 18/02/18.
+ * Created by SandeepSinha on 18/11/18.
  */
 
 public class NewsLoader extends AsyncTaskLoader<List<News>> {

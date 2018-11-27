@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Labtop on 18/02/18.
+ * Created by SandeepSinha on 18/11/18.
  */
 
 public class NewsAdpater extends ArrayAdapter<News> {
